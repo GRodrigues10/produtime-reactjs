@@ -1,12 +1,15 @@
-# React + Vite
+# Produtime
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Produtime é um aplicativo desenvolvido para ajudar pessoas a se organizarem melhor no ambiente de trabalho. A proposta do app é simplificar o gerenciamento de tarefas, ajudando os usuários a manterem o foco, lembrarem de seus compromissos e utilizarem melhor o seu tempo.
 
-Currently, two official plugins are available:
+Com uma interface simples, direta e responsiva, o app permite:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Adicionar tarefas de forma rápida;
 
-## Expanding the ESLint configuration
+Visualizar todas as pendências em uma única tela;
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Acompanhar o progresso das atividades com clareza;
+
+Utilizar o app tanto em desktop quanto em dispositivos móveis.
+
+Ideal para profissionais que buscam mais produtividade e organização no dia a dia, o Produtime visa reduzir esquecimentos, melhorar a eficiência e trazer mais tranquilidade na hora de lidar com a rotina de trabalho.
