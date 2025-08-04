@@ -3,9 +3,12 @@ import { StylesLogin } from "./Styles";
 import img from "../../assets/logo.png";
 import emailImg from "../../assets/o-email.png";
 import passwordImg from "../../assets/senha.png";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+
 
 function LoginScreen() {
+  const location = useLocation();
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -16,11 +19,12 @@ function LoginScreen() {
       alert("Preencha todos os campos!");
       return;
     }
-    navigate("/home", {state:{email}} );
+    const firstName = email.split('@')[0];
+    navigate("/home", {state:{email, firstName}} );
   };
 
   const create = () => {
-    navigate('createAccount');
+    navigate('/createAccount');
   }
 
   return (

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { StylesCreateAccount } from "./Styles";
 import { useNavigate } from "react-router-dom";
 
+
 function CreateAccount() {
   const [firstName, setFirstName] = useState("");
   const [LastName, setLastName] = useState("");
@@ -21,7 +22,7 @@ function CreateAccount() {
         alert('Preencha todos os campos!');
         return;
     }
-      navigate("/");
+      navigate("/", {state:{firstName}});
   };
 
   return (

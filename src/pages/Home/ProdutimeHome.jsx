@@ -7,7 +7,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 function ProdutimeHome() {
   const navigate = useNavigate();
   const location = useLocation();
-  const email = location.state?.email || "usuário";
+  const firstName = location.state?.firstName || "usuário";
   const [tasks, setTasks] = useState([
     {
       id: v4(),
@@ -26,7 +26,7 @@ function ProdutimeHome() {
     },
   ]);
   const [input, setInput] = useState("");
-  const [text,  setText] = useState(`Olá, ${email}`);
+  const [text,  setText] = useState(`Olá, ${firstName}`);
 
 
 
@@ -65,7 +65,7 @@ function ProdutimeHome() {
           </div>
 
           <div className="user" onMouseEnter={()=>setText('Sair do Produtime')}
-                                onMouseLeave={()=>setText(`Olá, ${email}!`)}>
+                                onMouseLeave={()=>setText(`Olá, ${firstName}!`)}>
             <p onClick={leave}>{text}</p>
           </div>
         </div>
