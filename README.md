@@ -4,12 +4,12 @@ Produtime é um aplicativo desenvolvido para ajudar pessoas a se organizarem mel
 
 Com uma interface simples, direta e responsiva, o app permite:
 
-Adicionar tarefas de forma rápida;
+ - Adicionar tarefas de forma rápida;
 
-Visualizar todas as pendências em uma única tela;
+ - Visualizar todas as pendências em uma única tela;
 
-Acompanhar o progresso das atividades com clareza;
+ - Acompanhar o progresso das atividades com clareza;
 
-Utilizar o app tanto em desktop quanto em dispositivos móveis.
+ - Utilizar o app tanto em desktop quanto em dispositivos móveis.
 
 Ideal para profissionais que buscam mais produtividade e organização no dia a dia, o Produtime visa reduzir esquecimentos, melhorar a eficiência e trazer mais tranquilidade na hora de lidar com a rotina de trabalho.
