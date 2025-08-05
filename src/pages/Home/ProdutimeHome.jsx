@@ -28,7 +28,8 @@ function ProdutimeHome() {
 
   const [input, setInput] = useState("");
   const [text,  setText] = useState(`Olá, ${firstName}`);
-  const [timers, setTimers] = useState({})
+  const [timers, setTimers] = useState({});
+  const [filter, setFilter] = useState("Todas");
 
   const addTasks = () => {
     if(!input.trim()){
@@ -115,6 +116,11 @@ const formatTime = (seconds) => {
   return `${min}:${sec}`;
 };
 
+const getFilteredTasks = () => {
+  if (filter === "Todas") return tasks;
+  return tasks.filter((task) => task.status === filter);
+};
+
 
 
   return (
@@ -133,10 +139,10 @@ const formatTime = (seconds) => {
         </div>
         <div className="part2">
           <div className="aba">
-            <p>Todas</p>
-            <p>Pendentes</p>
-            <p>Concluidas</p>
-            <p>Começada</p>
+            <p onClick={()=>setFilter('Todas')}>Todas</p>
+            <p onClick={()=>setFilter('Pendente')}>Pendentes</p>
+            <p onClick={()=>setFilter('Concluída')}>Concluídas</p>
+            <p onClick={()=>setFilter('Começada')}>Começada</p>
           </div>
 
           <div className="inputs">
@@ -164,7 +170,7 @@ const formatTime = (seconds) => {
               <p>Remover</p>
             </div> */}
 
-           {tasks.map((t) => (
+           {getFilteredTasks().map((t) => (
             
   <div key={t.id} className="task-item">
     

@@ -11,6 +11,10 @@ function ForgotPassword() {
         alert('Preencha todos os campos!');
         return;
     }
+    if(newPassword !== confirmNewPassword){
+      alert('As senhas não são iguais. Tente novamente!');
+      return;
+    }
     navigate("/");
   };
   return (
