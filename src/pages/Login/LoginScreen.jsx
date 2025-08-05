@@ -19,8 +19,21 @@ function LoginScreen() {
       alert("Preencha todos os campos!");
       return;
     }
-    const firstName = email.split('@')[0];
-    navigate("/home", {state:{email, firstName}} );
+   
+
+    const storedUserJSON = localStorage.getItem('usuario');
+    if(!storedUserJSON){
+      alert('Usuário não cadastrado, crie uma conta!');
+      return;
+    }
+    const storedUser = JSON.parse(storedUserJSON);
+    if(email === storedUser.email && password === storedUser.senha){
+      const firstName = email.split('@')[0];
+      navigate("/home", {state:{email, firstName}} );
+    }
+    else{
+      alert('Email ou Senha incorretos!')
+    }
   };
 
   const create = () => {

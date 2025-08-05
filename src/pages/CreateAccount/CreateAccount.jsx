@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { StylesCreateAccount } from "./Styles";
 import { useNavigate } from "react-router-dom";
 
-
 function CreateAccount() {
   const [firstName, setFirstName] = useState("");
   const [LastName, setLastName] = useState("");
@@ -18,11 +17,21 @@ function CreateAccount() {
       !LastName.trim() ||
       !email.trim() ||
       !password.trim()
-    ){
-        alert('Preencha todos os campos!');
-        return;
+    ) {
+      alert("Preencha todos os campos!");
+      return;
     }
-      navigate("/", {state:{firstName}});
+
+   const user = {
+  email,
+  senha: password,
+  firstName,
+};
+
+
+    localStorage.setItem("usuario", JSON.stringify(user));
+    alert("Usuário cadastrado com sucesso!");
+    navigate("/", { state: { firstName } });
   };
 
   return (
