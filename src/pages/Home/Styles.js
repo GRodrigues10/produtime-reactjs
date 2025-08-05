@@ -55,7 +55,14 @@ export const StylesHome = styled.div`
     display: flex;
     flex-direction: column;
     gap: 10px;
+    
   }
+
+  /* .tasks .task-header p{
+
+
+
+  } */
 
   .content .part2 .aba {
     display: flex;
@@ -69,11 +76,22 @@ export const StylesHome = styled.div`
     border-radius: 10px;
     margin-bottom: 20px;
     white-space: nowrap;
+    
+  }
+
+  .task-coheader{
+    display: flex;
+    font-size: 0.65rem;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
   }
 
   .inputs {
     display: flex;
     flex-direction: column;
+    
   }
 
   .inputs input {
@@ -135,6 +153,15 @@ export const StylesHome = styled.div`
       transform: scale(1.010);
     }
   }
+
+  .task-header {
+  cursor: default; /* remove o pointer */
+  transform: none !important; /* remove o transform no hover */
+
+  &:hover {
+    transform: none; /* garante que não vai aplicar no hover */
+  }
+}
 
   .task-item .removeButton {
     background: transparent;
@@ -348,7 +375,7 @@ export const StylesHome = styled.div`
 
     .inputs {
       flex-direction: row;
-      gap: 10px;
+      gap: 20px;
       align-items: center;
       justify-content: center;
       margin-bottom: 15px;
@@ -365,7 +392,7 @@ export const StylesHome = styled.div`
     }
 
     .inputs button {
-      background-color: #11d331ff; /* Verde limão suave */
+      background-color: #14b619ff; 
       padding: 15px;
       font-size: 1.1rem;
       border-top-left-radius: 5px;
@@ -375,7 +402,7 @@ export const StylesHome = styled.div`
       transition: 0.2s ease;
 
       &:hover {
-        background-color: #0fec37ff;
+        background-color: #21b93dff;
       }
     }
 
@@ -384,6 +411,7 @@ export const StylesHome = styled.div`
       padding: 15px;
       font-size: 1.2rem;
       margin-bottom: 20px;
+    
     }
 
     .part2 .task-item {
