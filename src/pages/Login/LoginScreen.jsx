@@ -27,6 +27,10 @@ function LoginScreen() {
     navigate('/createAccount');
   }
 
+  const forgot = () => {
+    navigate('/forgotPassword')
+  }
+
   return (
     <>
       <StylesLogin>
@@ -68,7 +72,7 @@ function LoginScreen() {
             </div>
             <div className="links">
               <p>
-                <strong>Esqueceu a senha?</strong>
+                <strong onClick={forgot}>Esqueceu a senha?</strong>
               </p>
               <p>
                 <strong onClick={create}>Criar conta</strong>

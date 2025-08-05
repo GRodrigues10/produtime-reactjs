@@ -77,7 +77,7 @@ export const StylesHome = styled.div`
   }
 
   .inputs input {
-    padding: 5px;
+    padding: 10px;
     font-size: 1rem;
     background-color: #152c6bff;
     border: 1px solid white;
@@ -91,7 +91,7 @@ export const StylesHome = styled.div`
   }
 
   .inputs button {
-    padding: 5px;
+    padding: 10px;
     font-size: 1rem;
     border-radius: 5px;
     border-top-left-radius: 0px;
@@ -317,10 +317,10 @@ export const StylesHome = styled.div`
 
     .aba {
       background-color: #007bff; /* azul */
-      position: sticky;
+     
       top: 0;
       left: 0;
-      z-index: 10;
+     
       padding-top: 0;
       margin-top: 10px !important;
       border: 1px solid;

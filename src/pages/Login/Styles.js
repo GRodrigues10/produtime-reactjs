@@ -173,6 +173,8 @@ export const StylesLogin = styled.div `
 
              .content .links p{
                 font-size: 1.1rem;
+                position: relative;
+                top: 10px;
              }
         }
 `
