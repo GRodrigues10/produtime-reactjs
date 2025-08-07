@@ -145,7 +145,7 @@ function ProdutimeHome() {
             <p onClick={() => setFilter("Todas")}>Todas</p>
             <p onClick={() => setFilter("Pendente")}>Pendentes</p>
             <p onClick={() => setFilter("Concluída")}>Concluídas</p>
-            <p onClick={() => setFilter("Iniciada")}>Começada</p>
+            <p onClick={() => setFilter("Iniciada")}>Iniciada</p>
           </div>
 
           <div className="inputs">
