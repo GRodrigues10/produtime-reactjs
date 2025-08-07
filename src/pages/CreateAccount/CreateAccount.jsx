@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { StylesCreateAccount } from "./Styles";
 import { useNavigate } from "react-router-dom";
+import passwordImg from "../../assets/senha.png";
+import emailImg from "../../assets/o-email.png";
+
 
 function CreateAccount() {
   const [firstName, setFirstName] = useState("");
@@ -22,12 +25,11 @@ function CreateAccount() {
       return;
     }
 
-   const user = {
-  email,
-  senha: password,
-  firstName,
-};
-
+    const user = {
+      email,
+      senha: password,
+      firstName,
+    };
 
     localStorage.setItem("usuario", JSON.stringify(user));
     alert("Usuário cadastrado com sucesso!");
@@ -57,19 +59,27 @@ function CreateAccount() {
           </div>
 
           <div className="account">
-            <input
-              type="text"
-              placeholder="Email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            ></input>
+            <div className="email-wrapper">
+              <input
+                type="text"
+                placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <img src={emailImg} alt="Email-logo" className="iconImage" />
+              
 
-            <input
-              type="text"
-              placeholder="Senha"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
+            </div>
+
+            <div className="password-wrapper">
+              <input
+                type="password"
+                placeholder="Senha"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <img src={passwordImg} alt="Senha-logo" className="iconImage" />
+            </div>
           </div>
           <div className="birth">
             <select>

@@ -76,7 +76,7 @@ export const StylesLogin = styled.div `
 }
     
 
-
+    
 
     .input-wrapper .iconImage {
       position: absolute;
