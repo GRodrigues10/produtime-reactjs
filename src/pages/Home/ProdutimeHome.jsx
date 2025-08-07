@@ -21,7 +21,7 @@ function ProdutimeHome() {
     },
     {
       id: v4(),
-      status: "Começada",
+      status: "Iniciada",
       text: "Conversar com novo cliente",
     },
   ]);
@@ -67,7 +67,7 @@ function ProdutimeHome() {
   };
 
   const getNextStatus = (current) => {
-    const order = ["Pendente", "Começada", "Concluída"];
+    const order = ["Pendente", "Iniciada", "Concluída"];
     const currentIndex = order.indexOf(current);
     const nextIndex = (currentIndex + 1) % order.length;
     return order[nextIndex];
@@ -145,7 +145,7 @@ function ProdutimeHome() {
             <p onClick={() => setFilter("Todas")}>Todas</p>
             <p onClick={() => setFilter("Pendente")}>Pendentes</p>
             <p onClick={() => setFilter("Concluída")}>Concluídas</p>
-            <p onClick={() => setFilter("Começada")}>Começada</p>
+            <p onClick={() => setFilter("Iniciada")}>Começada</p>
           </div>
 
           <div className="inputs">
