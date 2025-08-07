@@ -11,7 +11,7 @@ function App() {
   return (
     <>
     <div className='app'>
-      <Router>
+      <Router basename='/produtime-reactjs'>
         <Routes>
           <Route path='/' element = {<LoginScreen/>}/>
           <Route path='/home' element = {<ProdutimeHome/>}/>
