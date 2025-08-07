@@ -25,8 +25,8 @@ function ForgotPassword() {
   return (
     <StylesForgotPassword>
       <div className="content">
-        <h1>Redefinir Senha</h1>
-
+        <h1>Esqueceu a Senha?</h1>
+        <p>Redefina ela abaixo:</p>
         <div className="password-wrapper">
           <input
             type={showNewPassword ? "text" : "password"}

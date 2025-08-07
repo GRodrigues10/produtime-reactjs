@@ -161,8 +161,6 @@ export const StylesLogin = styled.div `
                 flex-direction: column;
                 height: 45%;
                 min-height: 400px;
-         
-        
                 justify-content: center;
             }
              .content .part1 .title h1{
@@ -187,5 +185,53 @@ export const StylesLogin = styled.div `
                 position: relative;
                 top: 10px;
              }
+        }
+
+        @media screen and (min-width: 1200px){
+            .content{
+                min-height: 500px;
+                min-width: 800px;
+                justify-content: center;
+            }
+
+            .content .part1 .title{
+                position: relative;
+                bottom: 20px;
+            }
+
+             .content .part1 .title h1{
+                font-size: 3rem;
+            }
+
+            .content .part1 p{
+                font-size: 1.4rem;
+                position: relative;
+                bottom: 10px;
+            }
+
+            .content .part2 .inputs input{
+                font-size: 1.4rem;
+                padding: 15px;
+                padding-left: 40px;
+                
+            }
+
+            .toggleEmoji{
+                top: 16px;
+            }
+
+             .content .part2 .inputs button{
+                font-size: 1.4rem;
+                padding: 15px;
+
+             }
+
+             .content .links p{
+                font-size: 1.3rem;
+                position: relative;
+                top: 30px;
+             }
+
+
         }
 `
