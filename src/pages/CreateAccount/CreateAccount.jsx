@@ -4,13 +4,13 @@ import { useNavigate } from "react-router-dom";
 import passwordImg from "../../assets/senha.png";
 import emailImg from "../../assets/o-email.png";
 
-
 function CreateAccount() {
   const [firstName, setFirstName] = useState("");
   const [LastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [select, setSelect] = useState("");
+  const [showNewPassword, setShowNewPassword] = useState(false);
 
   const navigate = useNavigate();
 
@@ -67,18 +67,22 @@ function CreateAccount() {
                 onChange={(e) => setEmail(e.target.value)}
               />
               <img src={emailImg} alt="Email-logo" className="iconImage" />
-              
-
             </div>
 
             <div className="password-wrapper">
               <input
-                type="password"
+                type={showNewPassword ? 'text' : 'password'}
                 placeholder="Senha"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
               <img src={passwordImg} alt="Senha-logo" className="iconImage" />
+              <span
+                className="toggleEmoji"
+                onClick={() => setShowNewPassword(!showNewPassword)}
+              >
+                {showNewPassword ? "🙉" : "🙈"}
+              </span>
             </div>
           </div>
           <div className="birth">

@@ -41,6 +41,35 @@ export const StylesForgotPassword = styled.div `
        
     }
 
+     .password-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  .password-wrapper input {
+    width: 100%;
+    padding-left: 40px !important; /* espaço pro ícone */
+  }
+
+  .password-wrapper .iconImage {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+  }
+
+  .toggleEmoji {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+  top: 8px;
+}
+
     .content button{
         background-color: #1881f1ff;
         color:white;
@@ -79,6 +108,8 @@ export const StylesForgotPassword = styled.div `
         padding: 12px;
         font-size: 1.2rem;
     }
+
+   
         
     }
 
@@ -101,5 +132,9 @@ export const StylesForgotPassword = styled.div `
             padding: 15px;
             font-size: 1.3rem;
         }
+
+         .toggleEmoji{
+            top: 12px;
+    }
     }
 `

@@ -84,6 +84,16 @@ export const StylesCreateAccount = styled.div`
     pointer-events: none;
   }
 
+   .toggleEmoji {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+  top: 4px;
+
+}
+
   .content .name input {
     padding: 10px;
     border-radius: 5px;
@@ -157,11 +167,17 @@ export const StylesCreateAccount = styled.div`
       font-size: 1.1rem;
     }
 
+    .toggleEmoji{
+      top: 10px;
+    }
+
     .btn button {
       padding: 15px;
       font-size: 1.2rem;
       cursor: pointer;
     }
+
+
   }
 
   @media screen and (min-width: 992px) {
@@ -188,6 +204,10 @@ export const StylesCreateAccount = styled.div`
     .content .account input {
       padding: 20px;
       font-size: 1.2rem;
+    }
+
+    .toggleEmoji{
+      top: 16px;
     }
 
     select {

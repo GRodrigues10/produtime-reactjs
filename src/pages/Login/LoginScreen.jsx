@@ -11,6 +11,8 @@ function LoginScreen() {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showNewPassword, setShowNewPassword] = useState(false);
+  
 
   const navigate = useNavigate();
 
@@ -72,13 +74,19 @@ function LoginScreen() {
 
               <div className="input-wrapper">
                 <input
-                  type="password"
+                  type={showNewPassword ? 'text' : 'password'}
                   placeholder="Senha"
                   autoComplete="new-password"
                   onChange={(e) => setPassword(e.target.value)}
                   value={password}
                 />
                 <img src={passwordImg} alt="Senha-logo" className="iconImage" />
+                <span
+            className="toggleEmoji"
+            onClick={() => setShowNewPassword(!showNewPassword)}
+          >
+            {showNewPassword ? "🙉" : "🙈"}
+          </span>
               </div>
 
               <button onClick={login}>Entrar</button>

@@ -75,7 +75,14 @@ export const StylesLogin = styled.div `
       outline: none;
 }
     
-
+  .toggleEmoji {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+  top: 6px;
+}
     
 
     .input-wrapper .iconImage {
@@ -140,6 +147,10 @@ export const StylesLogin = styled.div `
 
              .content .links p{
                 font-size: 1rem;
+             }
+
+             .toggleEmoji{
+                top: 8px;
              }
         }
 
