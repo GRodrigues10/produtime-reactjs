@@ -11,18 +11,13 @@ function ProdutimeHome() {
   const [tasks, setTasks] = useState([
     {
       id: v4(),
-      status: "Concluída",
+      status: "Pendente",
       text: "Fazer relatório da empresa.",
     },
     {
       id: v4(),
-      status: "Pendente",
-      text: "Adicionar uma funcionalidade nova no sistema",
-    },
-    {
-      id: v4(),
       status: "Iniciada",
-      text: "Conversar com novo cliente",
+      text: "Analisar currículos.",
     },
   ]);
 
